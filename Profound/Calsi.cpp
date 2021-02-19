@@ -7,17 +7,19 @@ class Calsi{
     	int num1, num2;
     	float result;
 	public:
+		//get single number from user
 		void getNumber(){
 			cout<<endl<<"Enter first number : ";
 			cin>>num1;
 		}
-
+		//get multiple numbers from user
 		void getNumbers(){
 			cout<<endl<<"Enter first number : ";
 			cin>>num1;
 			cout<<endl<<"Enter second number : ";
 			cin>>num2;
 		}
+
 		void add(){
 			result = num1 + num2;
 		}
@@ -54,6 +56,7 @@ class Calsi{
 			for(int i = 0; i < num2 ; i++)
 				result *= num1;
 		}
+
 		void menu(){
 			cout<<endl<<"*** MENU ****";
 			cout<<endl<<"1 : Addition ";
@@ -68,6 +71,7 @@ class Calsi{
 		}
 }obj;
 
+//main method...
 int main(){
 	int ch;
 
