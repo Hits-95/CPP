@@ -9,7 +9,7 @@ class Calsi{
 	public:
 		//get single number from user
 		void getNumber(){
-			cout<<endl<<"Enter first number : ";
+			cout<<endl<<"Enter number : ";
 			cin>>num1;
 		}
 		//get multiple numbers from user
