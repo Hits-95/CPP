@@ -95,7 +95,7 @@ void Result :: Class(){
 						  }
 }
 int main(){
-	    pass_word();
+	    //pass_word();
 	       Result x;
 	       x.Display_Result_info();
 		cin.get();
