@@ -127,16 +127,16 @@ int main(){
 			case 1 :
 				getUser_Pass();
 				if(std.isAuthoris())
-					cout<<endl<<"\t Studet is Authoris.";
+					cout<<endl<<"\t Studet is Authorise.";
 				else
-					cout<<endl<<"\t Studet NOT Authoris.";
+					cout<<endl<<"\t Studet NOT Authorise.";
 			break;
 			case 2 :
 				getUser_Pass();
 				if(emp.isAuthoris())
-					cout<<endl<<"\t Employee is Authoris.";
+					cout<<endl<<"\t Employee is Authorise.";
 				else
-					cout<<endl<<"\t Employee NOT Authoris.";
+					cout<<endl<<"\t Employee NOT Authorise.";
 			break;
 			case 3 :
 				 exit(0);
