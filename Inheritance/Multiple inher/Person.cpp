@@ -1,3 +1,4 @@
+
 #include "iostream"
 using namespace std;
 
@@ -38,7 +39,7 @@ class Person{
 
 //child of Person class
 class Student : public Person{
-	protected:
+	private:
 		string college;
 		string cource;
 	public:
@@ -64,7 +65,7 @@ class Student : public Person{
 
 //child of Person class
 class Employee : public Person{
-	protected:
+	private:
 		string company;
 		string department;
 	public:
