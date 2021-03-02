@@ -101,13 +101,16 @@ void getUser_Pass(){
 int main(){
 	int ch;
 
-
+    cout<<endl<<"\t Enter Student Data ";
+    cout<<endl<<"\t --------------------------------\n";
 	Student std = Student();
 	std.getData();
 	std.getStudent();
 	std.displayData();
 	std.displayStudent();
 
+    cout<<endl<<"\t Enter Employee Data ";
+    cout<<endl<<"\t --------------------------------\n";
 	Employee emp = Employee();
 	emp.getData();
 	emp.getEmployee();
