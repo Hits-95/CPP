@@ -1,12 +1,11 @@
 #include "iostream"
 using namespace std;
 
-template <class t1, typename t2>
+template <typename t1>
 
 //person base class
 class Person{
-	t1 id;
-	t2 name;
+	t1 id, name;
 
 	public:
 		void getPerson(){
@@ -22,23 +21,55 @@ class Person{
 		}
 };
 
-class Student : public Person{
-	string couse;
+//Derived call
+template<typename t1>
+class Student : public Person<t1>{
+	t1 course;
 	
 	public:
 		void getCourse(){
-			cout<<endl<<"Enter Couse  : ";
-			cin>>this->couse;
+			cout<<endl<<"Enter Course  : ";
+			cin>>this->course;
 		}
 		
-		void displayCouse(){
-			cout<<endl<<"Couse : "<<this->couse;
+		void displayCourse(){
+			cout<<endl<<"Course : "<<this->course;
 		}
 };
+
+//Derived call
+template<class t1>
+class Employee : public Person<t1>{
+	t1 department;
+	
+	public:
+		void getDepartment(){
+			cout<<endl<<"Enter Department : ";
+			cin>>this->department;
+		}
+		
+		void displayDepartment(){
+			cout<<endl<<"Department : "<<this->department;
+		}
+};
+
+
 //main body
 int main(){
-	Student<int, string> person;
-	person.getPerson();
-	person.displayPerson();
+	Student<string> sobj;
+	Employee<string> eobj;
+	
+	//Student calling
+	sobj.getPerson();
+	sobj.getCourse();
+	sobj.displayPerson();
+	sobj.displayCourse();
+	cout<<endl<<"--------------------";
+	//Employee calling
+	eobj.getPerson();
+	eobj.getDepartment();
+	eobj.displayPerson();
+	eobj.displayDepartment();
+	
 	return 0;
 }
